@@ -10,21 +10,18 @@
       var n1 = parseFloat(prompt("Digite um número"));
       var n2 = parseFloat(prompt("Digite um número"));
       var n3 = parseFloat(prompt("Digite um número"));
-      var soma = n1+n2+n2;
-      alert("Soma: "+ soma)
+      var soma;
+      
+      
 
-      function num(soma){
-           return soma;
-      }
-
-         if(n1>n2 & n1>n3){
+         if(n1>n2 && n1>n3){
          alert("O maior número é: "+ n1)
          }else if (n2>n3){
          alert("O maior número é: "+ n2)
          }else{
           alert("O maior número é: "+ n3)
          }
-         if(n1<n2 & n1<n3){
+         if(n1<n2 && n1<n3){
          alert("O menor número é: "+ n1)
          }else if (n2<n3){
          alert("O menor número é: "+ n2)
@@ -32,7 +29,12 @@
           alert("O menor número é: "+ n3)
          }
         
-
+         alert("Soma: " +num(soma))
+     
+     function num(soma){
+        var soma1 = n1+n2+n2;
+           return soma1;
+      }
     </script>
 </body>
 </html>
