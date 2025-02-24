@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>atividade2</title>
+</head>
+<body>
+    <script>
+      var n1 = prompt("Digite um nome");
+      var n2 = prompt("Digite um nome");
+      var n3 = prompt("Digite um nome");
+      
+      alert(nome(n2))
+
+      function nome(lala){
+           return lala.length;
+      }
+
+         if(n1.length>n2.length & n1.length>n3.length){
+         alert("O maior nome é: "+ n1)
+         }else if (n2.length>n3.length){
+         alert("O maior nome é: "+ n2)
+         }else{
+          alert("O maior nome é: "+ n3)
+         }
+         if(n1.length<n2.length & n1.length<n3.length){
+         alert("O menor nome é: "+ n1)
+         }else if (n2.length<n3.length){
+         alert("O menor nome é: "+ n2)
+         }else{
+          alert("O menor nome é: "+ n3)
+         }
+        
+
+    </script>
+</body>
+</html>

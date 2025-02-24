@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>atividade 1</title>
+</head>
+<body>
+    <script>
+        var numero = parseInt(prompt("Digite um número de 1 a 7: "));
+        
+        if (numero >=1 & numero <=7){
+        alert("Boa");
+        alert(diadasemana(numero));
+        }else{
+        alert("Digite um número válido!");
+        }
+        function diadasemana(diasemana){
+        var dia;
+            switch(numero){
+         case 1:
+            dia = "Domingo";
+            break;
+         case 2:
+            dia = "Segunda";
+            break;  
+        case 3:
+            dia ="Terça";
+            break;    
+        case 4:
+            dia ="Quarta";
+            break;
+        case 5:
+            dia ="Quinta";
+            break;
+        case 6:
+            dia ="Sexta";
+            break;
+        case 7:
+            dia = "Sábado";
+            break; 
+            
+            default:
+            break;
+            }
+            return dia
+            }
+        
+       
+
+        
+
+    </script>
+</body>
+</html>
