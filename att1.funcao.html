@@ -9,15 +9,16 @@
     <script>
         var numero = parseInt(prompt("Digite um número de 1 a 7: "));
         
-        if (numero >=1 & numero <=7){
+        if (numero >=1 && numero <=7){
         alert("Boa");
-        alert(diadasemana(numero));
-        }else{
+        
+        }/*else{
         alert("Digite um número válido!");
-        }
+        }*/
+        alert(diadasemana(numero));
         function diadasemana(diasemana){
-        var dia;
-            switch(numero){
+            var dia;
+            switch(diasemana){
          case 1:
             dia = "Domingo";
             break;
@@ -41,10 +42,11 @@
             break; 
             
             default:
+            dia = "Número inválido";
             break;
             }
-            return dia
-            }
+            return dia;
+        }
         
        
 
