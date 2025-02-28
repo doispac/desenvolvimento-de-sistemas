@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h3 id="iH">Formulario DOM</h3>
+    <h2 id="iH2"></h2>
+    <p>
+        <label for="iNome">Nome: </label>
+        <input type="text" id="iNome" name="nNome">
+    </p>
+
+    <p>
+        <input type="button" value="Copiar" id="iBotao" onclick="teste()">
+    </p>
+
+    <p>
+        <label for="iCopia">Cópia: </label>
+        <input type="" id="iCopia" name="nCopia">
+    </p>
+
+    <script>
+        /*var nome1 = document.getElementById("iNome");
+        // alert(nome1);
+        var nome2 = document.getElementsByName("nNome");
+        // alert(nome2[0]);
+        var nome3 = document.getElementsByTagName("input");
+        // alert(nome3[0].type);
+
+        document.getElementById("iNome").value = "password";*/
+
+        /*function teste(){ 
+          var texto = document.getElementById("iNome").value;
+            document.getElementById("iCopia").value = texto; 
+
+         alert(texto.length);
+        }*/
+
+       document.getElementById("iBotao").onclick = function(){
+            var texto = document.getElementById("iH").innerHTML;
+            document.getElementById("iH2").innerHTML = texto;
+
+            console.log("Resultado: "+texto);
+            
+        }
+    </script>
+</body>
+</html>

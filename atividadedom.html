@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h3 id="iH">Atividade DOM</h3>
+
+    <p>
+        <label for="iNome1">1º Nome: </label>
+        <input type="text" id="iNome1" name="nNome1">
+    </p>
+
+    <p>
+        <label for="iNome2">2º Nome: </label>
+        <input type="text" id="iNome2" name="nNome2">
+    </p>
+
+    <p>
+        <input type="button" value="Processar" id="iBotao" onclick="maiornome()">
+    </p>
+
+    <p>
+        <label for="iMaior">Maior Nome: </label>
+        <input type="text" id="iMaior" name="nMaior">
+    </p>
+
+    <p>
+        <label for="iQtd">Qtd. Letras: </label>
+        <input type="text" id="iQtd" name="nQtd">
+    </p>
+    
+
+    <script>
+        function maiornome(){
+          var verificarnome = document.getElementById("iNome1").value;
+          var verificarnome2 = document.getElementById("iNome2").value;
+
+          if (verificarnome.length > verificarnome2.length){
+            document.getElementById("iMaior").value = verificarnome; 
+            document.getElementById("iQtd").value = verificarnome.length; 
+            
+          }else{document.getElementById("iMaior").value = verificarnome2;
+                document.getElementById("iQtd").value = verificarnome2.length;
+
+          }
+        }
+    </script>
+</body>
+</html>
